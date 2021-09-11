@@ -1,5 +1,11 @@
 const express = require("express");
 const app = express();
+const db = require("./models");
+
+
+(async () => {
+    await db.sequelize.sync();
+  })();
 
 app.use(express.json());
 
