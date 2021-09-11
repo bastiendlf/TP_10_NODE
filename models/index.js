@@ -19,6 +19,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.sauces = require("./song.js")(sequelize, Sequelize);
+db.songs = require("./song.js")(sequelize, Sequelize);
 
 module.exports = db;
