@@ -1,0 +1,30 @@
+{
+  "name": "tp_10_node",
+  "version": "1.0.0",
+  "description": "TP10 API music",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastiendlf/TP_10_NODE.git"
+  },
+  "author": "Bastien DELFORGE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastiendlf/TP_10_NODE/issues"
+  },
+  "homepage": "https://github.com/bastiendlf/TP_10_NODE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
