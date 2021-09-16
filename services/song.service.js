@@ -38,6 +38,24 @@ const SongService = {
     }
     return await SongRepository.delete(id);
   },
+  isLonger: (song1, song2) => {
+    if (!song1) {
+      throw Error("Song1 is null");
+    }
+    if (!song2) {
+      throw Error("Song2 is null");
+    }
+    return song1.length > song2.length;
+  },
+  sameArtist: (song1, song2) => {
+    if (!song1) {
+      throw Error("Song1 is null");
+    }
+    if (!song2) {
+      throw Error("Song2 is null");
+    }
+    return song1.author == song2.author;
+  }
 
 };
 
