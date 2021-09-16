@@ -28,6 +28,9 @@ const SongRepository = {
   },
   delete: (id) => {
     return Song.destroy({ where: { id: id } });
+  },
+  deleteAll: () => {
+    return Song.destroy({ where: {} })
   }
 
 };

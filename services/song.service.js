@@ -38,6 +38,9 @@ const SongService = {
     }
     return await SongRepository.delete(id);
   },
+  deleteAll: async () => {
+    return await SongRepository.deleteAll();
+  },
   isLonger: (song1, song2) => {
     if (!song1) {
       throw Error("Song1 is null");
