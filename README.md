@@ -19,5 +19,6 @@ replace <ur_password> by ur MySQL root password
 
 3) Open terminal in the root folder 
 4) -> npm intall
-5) -> npm run start
+5) To run application -> npm run start
+   To run tests -> npm run test
 6) Enjoy :) 
