@@ -48,7 +48,11 @@ const SongController = {
         } catch (error) {
             res.status(404).send({ message: `song with id - ${songId} not found` });
         }
-    }
+    },
+    deleteAll: async (req, res, next) => {
+        await SongService.deleteAll();
+        res.status(200).send({ message: "songs deleted successfully" });
+    },
 };
 
 module.exports = SongController;

@@ -10,7 +10,8 @@ const API_SONGS_QUERY = "/artists";
 
 songRouter.route("/")
     .get(songController.findAll)
-    .post(validate(SongValidator.validateCreate), songController.create);
+    .post(validate(SongValidator.validateCreate), songController.create)
+    .delete(songController.deleteAll);
 ;
 
 songRouter.route(API_SONGS_QUERY)
