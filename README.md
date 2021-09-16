@@ -18,7 +18,7 @@ module.exports = {
 replace <ur_password> by ur MySQL root password
 
 3) Open terminal in the root folder 
-4) -> npm intall
+4) Install dependences -> npm intall
 5) To run application -> npm run start
-   To run tests -> npm run test
-6) Enjoy :) 
+6) To run tests -> npm run test
+7) Enjoy :) 
